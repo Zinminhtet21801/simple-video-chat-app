@@ -42,6 +42,7 @@ navigator.mediaDevices
     });
 
     socket.on("user-connected", (userId) => {
+      console.log(userId);
       connectToNewUser(userId, stream);
     });
   });
