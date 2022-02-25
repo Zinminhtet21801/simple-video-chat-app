@@ -25,7 +25,7 @@ var peer = new Peer(undefined, {
   path: "/peerjs",
   // host: "/",
   host : "https://sleepy-lowlands-45440.herokuapp.com/",
-  port: process.env.PORT,
+  port: "39009",
 });
 
 let myVideoStream;
