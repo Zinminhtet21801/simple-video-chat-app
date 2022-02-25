@@ -74,9 +74,6 @@ let text = document.querySelector("#chat_message");
 let send = document.getElementById("send");
 let messages = document.querySelector(".messages");
 send.addEventListener("click", (e) => {
-    console.log('====================================');
-    console.log(text.value);
-    console.log('====================================');
   if (text.value.length !== 0) {
     socket.emit("message", text.value);
     text.value = "";
