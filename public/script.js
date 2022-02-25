@@ -21,12 +21,7 @@ showChat.addEventListener("click", () => {
 
 const user = prompt("Enter your name");
 
-var peer = new Peer(undefined, {
-  path: "/peerjs",
-  // host: "/",
-  host : "https://sleepy-lowlands-45440.herokuapp.com/",
-  port: "443",
-});
+var peer = new Peer();
 
 let myVideoStream;
 navigator.mediaDevices
